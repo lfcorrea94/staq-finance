@@ -1,0 +1,1 @@
+prompt ideal para começar a implementação (para usar com Copilot/ChatGPT)
