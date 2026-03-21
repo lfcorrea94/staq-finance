@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WAsofBanuGg=",
+  "success": true,
+  "projectFilePath": "C:\\Git\\Desenvolvimento\\staq-finance\\src\\Modules\\Tenancy\\Infrastructure\\StaqFinance.Modules.Tenancy.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lfoli\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.5\\microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
+    "C:\\Users\\lfoli\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.5\\microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\lfoli\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.5\\microsoft.entityframeworkcore.analyzers.10.0.5.nupkg.sha512",
+    "C:\\Users\\lfoli\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.5\\microsoft.entityframeworkcore.relational.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

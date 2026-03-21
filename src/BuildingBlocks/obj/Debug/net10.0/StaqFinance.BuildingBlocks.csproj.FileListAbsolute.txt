@@ -1,0 +1,12 @@
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\bin\Debug\net10.0\StaqFinance.BuildingBlocks.deps.json
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\bin\Debug\net10.0\StaqFinance.BuildingBlocks.dll
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\bin\Debug\net10.0\StaqFinance.BuildingBlocks.pdb
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\StaqFinance.BuildingBlocks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\StaqFinance.BuildingBlocks.AssemblyInfoInputs.cache
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\StaqFinance.BuildingBlocks.AssemblyInfo.cs
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\StaqFinance.BuildingBlocks.csproj.CoreCompileInputs.cache
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\StaqFinance.BuildingBlocks.sourcelink.json
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\StaqFinance.BuildingBlocks.dll
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\refint\StaqFinance.BuildingBlocks.dll
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\StaqFinance.BuildingBlocks.pdb
+C:\Git\Desenvolvimento\staq-finance\src\BuildingBlocks\obj\Debug\net10.0\ref\StaqFinance.BuildingBlocks.dll

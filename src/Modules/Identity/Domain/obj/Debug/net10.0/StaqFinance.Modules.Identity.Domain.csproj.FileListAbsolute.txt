@@ -1,0 +1,12 @@
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\bin\Debug\net10.0\StaqFinance.Modules.Identity.Domain.deps.json
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\bin\Debug\net10.0\StaqFinance.Modules.Identity.Domain.dll
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\bin\Debug\net10.0\StaqFinance.Modules.Identity.Domain.pdb
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\StaqFinance.Modules.Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\StaqFinance.Modules.Identity.Domain.AssemblyInfoInputs.cache
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\StaqFinance.Modules.Identity.Domain.AssemblyInfo.cs
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\StaqFinance.Modules.Identity.Domain.csproj.CoreCompileInputs.cache
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\StaqFinance.Modules.Identity.Domain.sourcelink.json
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\StaqFinance.Modules.Identity.Domain.dll
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\refint\StaqFinance.Modules.Identity.Domain.dll
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\StaqFinance.Modules.Identity.Domain.pdb
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Domain\obj\Debug\net10.0\ref\StaqFinance.Modules.Identity.Domain.dll

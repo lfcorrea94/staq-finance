@@ -1,0 +1,16 @@
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\bin\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.deps.json
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\bin\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.dll
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\bin\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.pdb
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\bin\Debug\net10.0\StaqFinance.Modules.Identity.Domain.dll
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\bin\Debug\net10.0\StaqFinance.Modules.Identity.Domain.pdb
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.csproj.AssemblyReference.cache
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.AssemblyInfoInputs.cache
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.AssemblyInfo.cs
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.sourcelink.json
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFina.3CD64C74.Up2Date
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.dll
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\refint\StaqFinance.Modules.Identity.Infrastructure.dll
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\StaqFinance.Modules.Identity.Infrastructure.pdb
+C:\Git\Desenvolvimento\staq-finance\src\Modules\Identity\Infrastructure\obj\Debug\net10.0\ref\StaqFinance.Modules.Identity.Infrastructure.dll
