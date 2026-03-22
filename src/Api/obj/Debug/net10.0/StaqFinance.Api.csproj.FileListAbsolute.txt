@@ -157,3 +157,4 @@ C:\Git\Desenvolvimento\staq-finance\src\Api\obj\Debug\net10.0\StaqFinance.Api.pd
 C:\Git\Desenvolvimento\staq-finance\src\Api\obj\Debug\net10.0\StaqFinance.Api.genruntimeconfig.cache
 C:\Git\Desenvolvimento\staq-finance\src\Api\obj\Debug\net10.0\ref\StaqFinance.Api.dll
 C:\Git\Desenvolvimento\staq-finance\src\Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Git\Desenvolvimento\staq-finance\src\Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
