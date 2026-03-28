@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StaqFinance.Modules.Identity.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+651d59c889e7481490dbb8ada7fec8b7da22cf4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04b35b1d20c2708b24b7e3bd88931574339d3e20")]
 [assembly: System.Reflection.AssemblyProductAttribute("StaqFinance.Modules.Identity.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StaqFinance.Modules.Identity.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

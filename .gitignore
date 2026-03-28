@@ -1,0 +1,45 @@
+## Visual Studio / IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build outputs
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+out/
+build/
+
+## .NET
+*.dll
+*.exe
+*.pdb
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+packages/
+
+## ASP.NET
+wwwroot/lib/
+
+## Logs
+*.log
+logs/
+
+## Environment / secrets
+.env
+.env.*
+appsettings.*.local.json
+secrets.json
+
+## Docker
+docker-compose.override.yml
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
