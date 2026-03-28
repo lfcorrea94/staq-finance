@@ -29,6 +29,7 @@
     <ProjectReference Include="..\Modules\Tenancy\Application\StaqFinance.Modules.Tenancy.Application.csproj" />
     <ProjectReference Include="..\Modules\Tenancy\Infrastructure\StaqFinance.Modules.Tenancy.Infrastructure.csproj" />
     <ProjectReference Include="..\Modules\Identity\Domain\StaqFinance.Modules.Identity.Domain.csproj" />
+    <ProjectReference Include="..\Modules\Identity\Application\StaqFinance.Modules.Identity.Application.csproj" />
     <ProjectReference Include="..\Modules\Identity\Infrastructure\StaqFinance.Modules.Identity.Infrastructure.csproj" />
   </ItemGroup>
 

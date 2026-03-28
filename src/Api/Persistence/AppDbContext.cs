@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using StaqFinance.Modules.Identity.Domain.Entities;
+using StaqFinance.Modules.Identity.Infrastructure.Persistence.Configurations;
 using StaqFinance.Modules.Tenancy.Domain.Entities;
 using StaqFinance.Modules.Tenancy.Infrastructure.Persistence.Configurations;
 
@@ -12,6 +13,7 @@ public sealed class AppDbContext : IdentityDbContext<ApplicationUser, Microsoft.
 
     public DbSet<Tenant> Tenants => Set<Tenant>();
     public DbSet<TenantUser> TenantUsers => Set<TenantUser>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -19,5 +21,6 @@ public sealed class AppDbContext : IdentityDbContext<ApplicationUser, Microsoft.
 
         builder.ApplyConfiguration(new TenantConfiguration());
         builder.ApplyConfiguration(new TenantUserConfiguration());
+        builder.ApplyConfiguration(new RefreshTokenConfiguration());
     }
 }

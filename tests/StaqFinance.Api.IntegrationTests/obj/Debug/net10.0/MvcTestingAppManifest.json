@@ -1,6 +1,7 @@
 {
   "StaqFinance.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Git\\Desenvolvimento\\staq-finance\\src\\Api",
   "StaqFinance.BuildingBlocks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Git\\Desenvolvimento\\staq-finance\\src\\BuildingBlocks",
+  "StaqFinance.Modules.Identity.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Git\\Desenvolvimento\\staq-finance\\src\\Modules\\Identity\\Application",
   "StaqFinance.Modules.Identity.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Git\\Desenvolvimento\\staq-finance\\src\\Modules\\Identity\\Domain",
   "StaqFinance.Modules.Identity.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Git\\Desenvolvimento\\staq-finance\\src\\Modules\\Identity\\Infrastructure",
   "StaqFinance.Modules.Tenancy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Git\\Desenvolvimento\\staq-finance\\src\\Modules\\Tenancy\\Application",

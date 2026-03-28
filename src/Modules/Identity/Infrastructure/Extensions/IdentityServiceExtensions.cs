@@ -2,6 +2,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using StaqFinance.Modules.Identity.Application.Commands;
+using StaqFinance.Modules.Identity.Application.Queries;
+using StaqFinance.Modules.Identity.Application.Services;
+using StaqFinance.Modules.Identity.Infrastructure.Handlers;
+using StaqFinance.Modules.Identity.Infrastructure.Services;
 using System.Text;
 
 namespace StaqFinance.Modules.Identity.Infrastructure.Extensions;
@@ -36,6 +41,14 @@ public static class IdentityServiceExtensions
                 };
             });
 
+        services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<ISlugService, SlugService>();
+        services.AddScoped<IRegisterUserCommandHandler, RegisterUserCommandHandler>();
+        services.AddScoped<ILoginCommandHandler, LoginCommandHandler>();
+        services.AddScoped<IRefreshTokenCommandHandler, RefreshTokenCommandHandler>();
+        services.AddScoped<IGetMeQueryHandler, GetMeQueryHandler>();
+
         return services;
     }
 }
+

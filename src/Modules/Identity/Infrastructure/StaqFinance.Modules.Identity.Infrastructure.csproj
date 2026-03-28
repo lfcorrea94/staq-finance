@@ -13,10 +13,14 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Application\StaqFinance.Modules.Identity.Application.csproj" />
     <ProjectReference Include="..\Domain\StaqFinance.Modules.Identity.Domain.csproj" />
+    <ProjectReference Include="..\..\Tenancy\Domain\StaqFinance.Modules.Tenancy.Domain.csproj" />
   </ItemGroup>
 
 </Project>

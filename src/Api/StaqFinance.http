@@ -1,0 +1,158 @@
+### StaqFinance API — Requests de teste
+### Visual Studio: clique em "Send Request" acima de cada requisição
+### Documentação completa: src/Api/docs/API.md
+
+@baseUrl = https://localhost:7275
+
+### Variáveis preenchidas após login (copie os valores das respostas)
+@accessToken = SEU_ACCESS_TOKEN_AQUI
+@refreshToken = SEU_REFRESH_TOKEN_AQUI
+
+# =============================================================================
+# HEALTH
+# =============================================================================
+
+### [1] Health check da API
+GET {{baseUrl}}/api/health
+
+###
+
+### [2] Health check do banco de dados
+GET {{baseUrl}}/api/health/db
+
+###
+
+# =============================================================================
+# AUTH — Register
+# =============================================================================
+
+### [3] Cadastrar novo usuário (201 Created)
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "joao@example.com",
+  "password": "Abc12345",
+  "displayName": "João Silva",
+  "workspaceName": "Meu Orçamento"
+}
+
+###
+
+### [4] Cadastrar com e-mail duplicado (409 Conflict)
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "joao@example.com",
+  "password": "Abc12345",
+  "displayName": "João Silva 2",
+  "workspaceName": "Outro Workspace"
+}
+
+###
+
+### [5] Cadastrar com senha fraca (400 Bad Request)
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "teste@example.com",
+  "password": "123",
+  "displayName": "Teste",
+  "workspaceName": "Workspace Teste"
+}
+
+###
+
+# =============================================================================
+# AUTH — Login
+# =============================================================================
+
+### [6] Login com sucesso (200 OK) — copie accessToken e refreshToken
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "joao@example.com",
+  "password": "Abc12345"
+}
+
+###
+
+### [7] Login com senha errada (401 Unauthorized)
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "joao@example.com",
+  "password": "SenhaErrada1"
+}
+
+###
+
+### [8] Login com e-mail inexistente (401 Unauthorized)
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "naocadastrado@example.com",
+  "password": "Abc12345"
+}
+
+###
+
+# =============================================================================
+# AUTH — Refresh token
+# =============================================================================
+
+### [9] Renovar tokens (200 OK) — preencha @refreshToken acima
+POST {{baseUrl}}/api/auth/refresh
+Content-Type: application/json
+
+{
+  "token": "{{refreshToken}}"
+}
+
+###
+
+### [10] Refresh com token inválido (401 Unauthorized)
+POST {{baseUrl}}/api/auth/refresh
+Content-Type: application/json
+
+{
+  "token": "token-invalido"
+}
+
+###
+
+# =============================================================================
+# ME
+# =============================================================================
+
+### [11] Obter dados do usuário autenticado (200 OK) — preencha @accessToken acima
+GET {{baseUrl}}/api/me
+Authorization: Bearer {{accessToken}}
+
+###
+
+### [12] Obter dados sem token (401 Unauthorized)
+GET {{baseUrl}}/api/me
+
+###
+
+# =============================================================================
+# WORKSPACE — Ping (requer usuário membro do workspace)
+# =============================================================================
+
+### [13] Ping no workspace (200 OK) — substitua o slug pelo gerado no register
+GET {{baseUrl}}/api/workspaces/meu-orcamento/_ping
+Authorization: Bearer {{accessToken}}
+
+###
+
+### [14] Ping em workspace inexistente (404)
+GET {{baseUrl}}/api/workspaces/nao-existe/_ping
+Authorization: Bearer {{accessToken}}
+
+###

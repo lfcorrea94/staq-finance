@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi;
 using Serilog;
 using StaqFinance.Api.Authorization;
 using StaqFinance.Api.Middleware;
@@ -32,7 +33,8 @@ try
     {
         var testDbName = builder.Configuration["TestDbName"] ?? "TestDb";
         builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseInMemoryDatabase(testDbName));
+            options.UseInMemoryDatabase(testDbName)
+                   .ConfigureWarnings(w => w.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.InMemoryEventId.TransactionIgnoredWarning)));
     }
     else
     {
@@ -51,7 +53,8 @@ try
             options.Password.RequireDigit = true;
             options.Password.RequiredLength = 8;
             options.Password.RequireNonAlphanumeric = false;
-            options.Password.RequireUppercase = false;
+            options.Password.RequireUppercase = true;
+            options.Password.RequireLowercase = true;
             options.User.RequireUniqueEmail = true;
         })
         .AddEntityFrameworkStores<AppDbContext>()
@@ -83,6 +86,24 @@ try
             Title = "StaqFinance API",
             Version = "v1",
             Description = "API de controle de gastos pessoais com suporte a múltiplos workspaces."
+        });
+
+        options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+        {
+            Name = "Authorization",
+            Type = SecuritySchemeType.Http,
+            Scheme = "bearer",
+            BearerFormat = "JWT",
+            In = ParameterLocation.Header,
+            Description = "Informe o token JWT obtido em POST /api/auth/login"
+        });
+
+        options.AddSecurityRequirement(_ => new OpenApiSecurityRequirement
+        {
+            {
+                new OpenApiSecuritySchemeReference("Bearer"),
+                new List<string>()
+            }
         });
     });
 
