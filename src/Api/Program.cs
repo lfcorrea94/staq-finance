@@ -91,11 +91,9 @@ try
         options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
             Name = "Authorization",
-            Type = SecuritySchemeType.Http,
-            Scheme = "bearer",
-            BearerFormat = "JWT",
+            Type = SecuritySchemeType.ApiKey,
             In = ParameterLocation.Header,
-            Description = "Informe o token JWT obtido em POST /api/auth/login"
+            Description = "Informe: Bearer {seu token JWT}"
         });
 
         options.AddSecurityRequirement(_ => new OpenApiSecurityRequirement
