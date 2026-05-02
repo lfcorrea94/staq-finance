@@ -5,7 +5,8 @@ using System.Text.Json;
 
 namespace StaqFinance.Api.IntegrationTests.Auth;
 
-public sealed class AuthTests : IClassFixture<ApiWebApplicationFactory>
+[Collection("Integration")]
+public sealed class AuthTests
 {
     private readonly ApiWebApplicationFactory _factory;
 

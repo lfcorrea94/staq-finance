@@ -5,7 +5,8 @@ using System.Text.Json;
 
 namespace StaqFinance.Api.IntegrationTests.Workspace;
 
-public sealed class PingTests : IClassFixture<ApiWebApplicationFactory>
+[Collection("Integration")]
+public sealed class PingTests
 {
     private readonly ApiWebApplicationFactory _factory;
 

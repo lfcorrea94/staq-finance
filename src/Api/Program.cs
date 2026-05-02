@@ -6,6 +6,8 @@ using Serilog;
 using StaqFinance.Api.Authorization;
 using StaqFinance.Api.Middleware;
 using StaqFinance.Api.Persistence;
+using StaqFinance.Modules.Accounts.Infrastructure.Extensions;
+using StaqFinance.Modules.Categories.Infrastructure.Extensions;
 using StaqFinance.Modules.Identity.Domain.Entities;
 using StaqFinance.Modules.Identity.Infrastructure.Extensions;
 using StaqFinance.Modules.Tenancy.Infrastructure.Extensions;
@@ -65,6 +67,12 @@ try
 
     // Tenancy module
     builder.Services.AddTenancyModule();
+
+    // Accounts module
+    builder.Services.AddAccountsModule();
+
+    // Categories module
+    builder.Services.AddCategoriesModule();
 
     // Authorization
     builder.Services.AddScoped<IAuthorizationHandler, MustBelongToTenantHandler>();

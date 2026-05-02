@@ -9,6 +9,30 @@
     <Project Path="src/Modules/Tenancy/Domain/StaqFinance.Modules.Tenancy.Domain.csproj" />
     <Project Path="src/Modules/Tenancy/Infrastructure/StaqFinance.Modules.Tenancy.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/BuildingBlocks/" />
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Accounts/" />
+  <Folder Name="/src/Modules/Accounts/Application/">
+    <Project Path="src/Modules/Accounts/Application/StaqFinance.Modules.Accounts.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Accounts/Domain/">
+    <Project Path="src/Modules/Accounts/Domain/StaqFinance.Modules.Accounts.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Accounts/Infrastructure/">
+    <Project Path="src/Modules/Accounts/Infrastructure/StaqFinance.Modules.Accounts.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Categories/" />
+  <Folder Name="/src/Modules/Categories/Application/">
+    <Project Path="src/Modules/Categories/Application/StaqFinance.Modules.Categories.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Categories/Domain/">
+    <Project Path="src/Modules/Categories/Domain/StaqFinance.Modules.Categories.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Categories/Infrastructure/">
+    <Project Path="src/Modules/Categories/Infrastructure/StaqFinance.Modules.Categories.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Tenancy/" />
+  <Folder Name="/src/Modules/Tenancy/Application/" />
   <Folder Name="/tests/">
     <Project Path="tests/StaqFinance.Api.IntegrationTests/StaqFinance.Api.IntegrationTests.csproj" />
   </Folder>

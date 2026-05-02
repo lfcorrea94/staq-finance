@@ -2,7 +2,8 @@ using System.Net;
 
 namespace StaqFinance.Api.IntegrationTests.Health;
 
-public sealed class HealthCheckTests : IClassFixture<ApiWebApplicationFactory>
+[Collection("Integration")]
+public sealed class HealthCheckTests
 {
     private readonly HttpClient _client;
 
