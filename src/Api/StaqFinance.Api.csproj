@@ -37,6 +37,9 @@
     <ProjectReference Include="..\Modules\Categories\Domain\StaqFinance.Modules.Categories.Domain.csproj" />
     <ProjectReference Include="..\Modules\Categories\Application\StaqFinance.Modules.Categories.Application.csproj" />
     <ProjectReference Include="..\Modules\Categories\Infrastructure\StaqFinance.Modules.Categories.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\Transactions\Domain\StaqFinance.Modules.Transactions.Domain.csproj" />
+    <ProjectReference Include="..\Modules\Transactions\Application\StaqFinance.Modules.Transactions.Application.csproj" />
+    <ProjectReference Include="..\Modules\Transactions\Infrastructure\StaqFinance.Modules.Transactions.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

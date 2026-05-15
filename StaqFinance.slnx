@@ -33,6 +33,16 @@
   </Folder>
   <Folder Name="/src/Modules/Tenancy/" />
   <Folder Name="/src/Modules/Tenancy/Application/" />
+  <Folder Name="/src/Modules/Transactions/" />
+  <Folder Name="/src/Modules/Transactions/Application/">
+    <Project Path="src/Modules/Transactions/Application/StaqFinance.Modules.Transactions.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Transactions/Domain/">
+    <Project Path="src/Modules/Transactions/Domain/StaqFinance.Modules.Transactions.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Transactions/Infrastructure/">
+    <Project Path="src/Modules/Transactions/Infrastructure/StaqFinance.Modules.Transactions.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/StaqFinance.Api.IntegrationTests/StaqFinance.Api.IntegrationTests.csproj" />
   </Folder>

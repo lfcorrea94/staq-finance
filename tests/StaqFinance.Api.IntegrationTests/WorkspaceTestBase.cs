@@ -39,4 +39,22 @@ public abstract class WorkspaceTestBase
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
         return request;
     }
+
+    protected static async Task<Guid> CreateAccountAsync(HttpClient client, string token, string slug, string name = "Conta Corrente")
+    {
+        var request = AuthorizedRequest(HttpMethod.Post, $"/api/workspaces/{slug}/accounts", token);
+        request.Content = JsonContent.Create(new { name });
+        var response = await client.SendAsync(request);
+        var body = await response.Content.ReadFromJsonAsync<JsonElement>();
+        return body.GetProperty("id").GetGuid();
+    }
+
+    protected static async Task<Guid> CreateCategoryAsync(HttpClient client, string token, string slug, string name = "Alimentação")
+    {
+        var request = AuthorizedRequest(HttpMethod.Post, $"/api/workspaces/{slug}/categories", token);
+        request.Content = JsonContent.Create(new { name });
+        var response = await client.SendAsync(request);
+        var body = await response.Content.ReadFromJsonAsync<JsonElement>();
+        return body.GetProperty("id").GetGuid();
+    }
 }
