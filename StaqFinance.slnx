@@ -31,6 +31,16 @@
   <Folder Name="/src/Modules/Categories/Infrastructure/">
     <Project Path="src/Modules/Categories/Infrastructure/StaqFinance.Modules.Categories.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/Modules/RecurringTransactions/" />
+  <Folder Name="/src/Modules/RecurringTransactions/Application/">
+    <Project Path="src/Modules/RecurringTransactions/Application/StaqFinance.Modules.RecurringTransactions.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/RecurringTransactions/Domain/">
+    <Project Path="src/Modules/RecurringTransactions/Domain/StaqFinance.Modules.RecurringTransactions.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/RecurringTransactions/Infrastructure/">
+    <Project Path="src/Modules/RecurringTransactions/Infrastructure/StaqFinance.Modules.RecurringTransactions.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/src/Modules/Tenancy/" />
   <Folder Name="/src/Modules/Tenancy/Application/" />
   <Folder Name="/src/Modules/Transactions/" />

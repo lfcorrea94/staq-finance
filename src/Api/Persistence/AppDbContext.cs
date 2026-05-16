@@ -9,6 +9,8 @@ using StaqFinance.Modules.Identity.Infrastructure.Persistence.Configurations;
 using StaqFinance.Modules.Tenancy.Application.Interfaces;
 using StaqFinance.Modules.Tenancy.Domain.Entities;
 using StaqFinance.Modules.Tenancy.Infrastructure.Persistence.Configurations;
+using StaqFinance.Modules.RecurringTransactions.Domain.Entities;
+using StaqFinance.Modules.RecurringTransactions.Infrastructure.Persistence.Configurations;
 using StaqFinance.Modules.Transactions.Domain.Entities;
 using StaqFinance.Modules.Transactions.Infrastructure.Persistence.Configurations;
 
@@ -29,6 +31,8 @@ public sealed class AppDbContext : IdentityDbContext<ApplicationUser, Microsoft.
     public DbSet<Account> Accounts => Set<Account>();
     public DbSet<Category> Categories => Set<Category>();
     public DbSet<Transaction> Transactions => Set<Transaction>();
+    public DbSet<RecurringTransaction> RecurringTransactions => Set<RecurringTransaction>();
+    public DbSet<RecurringTransactionRun> RecurringTransactionRuns => Set<RecurringTransactionRun>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -40,6 +44,8 @@ public sealed class AppDbContext : IdentityDbContext<ApplicationUser, Microsoft.
         builder.ApplyConfiguration(new AccountConfiguration());
         builder.ApplyConfiguration(new CategoryConfiguration());
         builder.ApplyConfiguration(new TransactionConfiguration());
+        builder.ApplyConfiguration(new RecurringTransactionConfiguration());
+        builder.ApplyConfiguration(new RecurringTransactionRunConfiguration());
 
         builder.Entity<Account>()
             .HasQueryFilter(a => !_currentTenant.IsResolved || a.TenantId == _currentTenant.TenantId);
@@ -49,5 +55,11 @@ public sealed class AppDbContext : IdentityDbContext<ApplicationUser, Microsoft.
 
         builder.Entity<Transaction>()
             .HasQueryFilter(t => !_currentTenant.IsResolved || t.TenantId == _currentTenant.TenantId);
+
+        builder.Entity<RecurringTransaction>()
+            .HasQueryFilter(r => !_currentTenant.IsResolved || r.TenantId == _currentTenant.TenantId);
+
+        builder.Entity<RecurringTransactionRun>()
+            .HasQueryFilter(r => !_currentTenant.IsResolved || r.TenantId == _currentTenant.TenantId);
     }
 }

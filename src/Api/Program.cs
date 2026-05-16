@@ -8,6 +8,7 @@ using StaqFinance.Api.Middleware;
 using StaqFinance.Api.Persistence;
 using StaqFinance.Modules.Accounts.Infrastructure.Extensions;
 using StaqFinance.Modules.Categories.Infrastructure.Extensions;
+using StaqFinance.Modules.RecurringTransactions.Infrastructure.Extensions;
 using StaqFinance.Modules.Transactions.Infrastructure.Extensions;
 using StaqFinance.Modules.Identity.Domain.Entities;
 using StaqFinance.Modules.Identity.Infrastructure.Extensions;
@@ -77,6 +78,9 @@ try
 
     // Transactions module
     builder.Services.AddTransactionsModule();
+
+    // RecurringTransactions module
+    builder.Services.AddRecurringTransactionsModule();
 
     // Authorization
     builder.Services.AddScoped<IAuthorizationHandler, MustBelongToTenantHandler>();

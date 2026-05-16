@@ -40,6 +40,9 @@
     <ProjectReference Include="..\Modules\Transactions\Domain\StaqFinance.Modules.Transactions.Domain.csproj" />
     <ProjectReference Include="..\Modules\Transactions\Application\StaqFinance.Modules.Transactions.Application.csproj" />
     <ProjectReference Include="..\Modules\Transactions\Infrastructure\StaqFinance.Modules.Transactions.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\RecurringTransactions\Domain\StaqFinance.Modules.RecurringTransactions.Domain.csproj" />
+    <ProjectReference Include="..\Modules\RecurringTransactions\Application\StaqFinance.Modules.RecurringTransactions.Application.csproj" />
+    <ProjectReference Include="..\Modules\RecurringTransactions\Infrastructure\StaqFinance.Modules.RecurringTransactions.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
