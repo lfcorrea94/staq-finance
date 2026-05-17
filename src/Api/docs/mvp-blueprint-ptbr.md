@@ -265,11 +265,11 @@ No run:
 
 ---
 
-## 11. Hospedagem (Render + Postgres)
+## 11. Hospedagem (Railway + Neon)
 
 Sugestão para MVP:
-- **API:** Render (Web Service com Docker)
-- **Banco:** Postgres (Neon free tier ou Postgres gerenciado do Render)
+- **API:** Railway (Web Service com Docker, auto-deploy pelo GitHub, sem hibernação no free tier)
+- **Banco:** Neon (PostgreSQL gratuito permanente, 0.5 GB, SSL obrigatório)
 
 Variáveis de ambiente:
 - `ConnectionStrings__Default`

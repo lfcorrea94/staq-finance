@@ -9,4 +9,4 @@ Abaixo está a sequência recomendada de prompts para implementar o MVP descrito
 3. `03-accounts-categories.md` — Accounts e Categories (create/list) com isolamento por tenant
 4. `04-transactions.md` — Transactions (create/list) com filtros (período/conta/categoria/tipo)
 5. `05-recurring-transactions.md` — Recorrência (create/list) + endpoint `run` com idempotência
-6. `06-render-deploy.md` — Docker + Render + Postgres + variáveis de ambiente + migrações
+6. `06-railway-deploy.md` — Docker + Railway + Neon (Postgres) + variáveis de ambiente + migrações

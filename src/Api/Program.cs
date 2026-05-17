@@ -157,6 +157,24 @@ try
     app.MapControllers();
     app.MapHealthChecks("/api/health/db");
 
+    // Apply pending EF Core migrations on startup (skipped in Testing environment)
+    if (!app.Environment.IsEnvironment("Testing"))
+    {
+        try
+        {
+            using var scope = app.Services.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            await db.Database.MigrateAsync();
+            Log.Information("Database migrations applied successfully");
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex, "Failed to apply database migrations. Application will shut down.");
+            await Log.CloseAndFlushAsync();
+            Environment.Exit(1);
+        }
+    }
+
     app.Run();
 }
 catch (Exception ex) when (ex is not HostAbortedException)

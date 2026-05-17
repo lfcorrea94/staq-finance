@@ -1,0 +1,19 @@
+.git
+.vs
+.idea
+.vscode
+
+**/bin
+**/obj
+
+**/*.user
+**/*.suo
+**/*.userprefs
+**/*.DotSettings.user
+
+**/node_modules
+
+docker-compose*.yml
+
+# Test results
+**/TestResults
