@@ -15,15 +15,18 @@ Este guia descreve como publicar a API no **Railway** usando o banco de dados **
 ## 1. Banco de dados — Neon
 
 1. Acesse [neon.tech](https://neon.tech) e crie uma conta.
-2. Crie um novo **Project** (ex.: `staqfinance-prod`).
-3. O branch `main` e o banco padrão já são criados automaticamente — renomeie o banco para `staqfinance` se preferir.
-4. Na aba **Connection Details**, selecione o driver **Npgsql / .NET** e copie a connection string no formato:
+2. Crie um novo **Project** (ex.: `staqfinance-prod`). O Neon cria automaticamente um branch `staqfinance` (Default) e um banco chamado **`neondb`**.
+3. No menu lateral, acesse **Overview** do branch e clique no botão **Connection details** (ou acesse direto pelo Dashboard do projeto).
+4. No modal **Connection details for staqfinance**:
+   - Confirme **Database:** `neondb` e **Role:** `staqfinance_owner`
+   - Copie os valores de **Host**, **Database**, **Username** e **Password** (clique em **Show password** para revelar)
+   - Monte a connection string no formato **key-value do Npgsql** (o formato URI `postgresql://...` **não é suportado** pelo driver .NET):
    ```
-   Host=ep-xxx.us-east-2.aws.neon.tech;Database=staqfinance;Username=staqfinance_owner;Password=xxx;SSL Mode=Require;Trust Server Certificate=true
+   Host=ep-xxx-pooler.sa-east-1.aws.neon.tech;Database=neondb;Username=staqfinance_owner;Password=SUA_SENHA;SSL Mode=Require;Trust Server Certificate=true
    ```
 5. Guarde essa string — ela será usada na variável `ConnectionStrings__Default` do Railway.
 
-> ⚠️ O Neon exige SSL. A connection string **deve** conter `SSL Mode=Require;Trust Server Certificate=true`.
+> ⚠️ O Neon exige SSL e o Npgsql **não suporta o formato URI** (`postgresql://...`). Use sempre o formato key-value com `SSL Mode=Require;Trust Server Certificate=true`.
 
 ---
 
@@ -48,7 +51,7 @@ Configure as seguintes variáveis na aba **Variables** do serviço:
 | Variável                     | Valor / Descrição                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------|
 | `ASPNETCORE_ENVIRONMENT`     | `Production`                                                                               |
-| `ConnectionStrings__Default` | Connection string do Neon (formato Npgsql com SSL — veja seção 1)                         |
+| `ConnectionStrings__Default` | Connection string **key-value** do Neon (ex.: `Host=ep-xxx-pooler.sa-east-1.aws.neon.tech;Database=neondb;Username=staqfinance_owner;Password=xxx;SSL Mode=Require;Trust Server Certificate=true`) |
 | `Jwt__Key`                   | Chave HMAC mínimo 32 caracteres — gere com: `openssl rand -base64 32`                     |
 | `Jwt__Issuer`                | `staqfinance-api`                                                                          |
 | `Jwt__Audience`              | `staqfinance-client`                                                                       |
